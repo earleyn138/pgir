@@ -24,8 +24,7 @@ def plot_groups(imin, imax, wholespec=True,
                 jband=False, hband=False, kband=False,
                 irtf_file=None, irtf_name=None,
                 figname=None, title=None,
-                show_He=False, show_H=False, show_C=False,
-                obsfile=obsfile):
+                show_He=False, show_H=False, show_C=False):
     specfiles = obs['specfilename'][imin:imax]
     fig = plt.figure(figsize=(10, 7))
     gs = gridspec.GridSpec(1, 1)
@@ -150,6 +149,8 @@ def plot_lcfigs(imin, imax,name=None):
     plt.subplots_adjust(hspace=0)
     fig.text(0.03, 0.5, 'Magnitude (J)', va='center', rotation='vertical')
     plt.savefig(name,bbox_inches='tight')
+
+
 
 def main():
     args = sys.argv[1:]
