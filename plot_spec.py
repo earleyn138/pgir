@@ -162,7 +162,7 @@ def main():
 
     if temp_fn:
         irtf_file = irtf_dir + temp_fn
-        irtf_name = temp_name #'M7-III, HD108849'
+        irtf_name = temp_name
     else:
         irtf_file = None
         irtf_name = None
